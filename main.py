@@ -18,7 +18,7 @@ def main():
         choice = input("Select an option: ")
         
         if choice == '1':
-            interface = input("Enter interface to sniff (e.g., eth0): ")
+            interface = input("Enter the network interface to sniff (e.g., 'Wi-Fi' on Windows, 'eth0' on Linux): ")
             packet_sniffer.start_sniffer(interface)
         elif choice == '2':
             filename = input("Enter path to .cap file: ")
